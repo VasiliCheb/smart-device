@@ -1,4 +1,4 @@
-const body = document.querySelector('.page__body');
+/*const body = document.querySelector('.page__body');
 const headerMenu = body.querySelector('.page-header__menu');
 const navToggle = headerMenu.querySelector('.page-header__menu-toggle');
 const navLinkList = headerMenu.querySelectorAll('.page-header__menu-list a');
@@ -26,4 +26,4 @@ if (navToggle) {
       }
     });
   });
-}
+}*/

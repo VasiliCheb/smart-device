@@ -1,7 +1,7 @@
 {
-  "name": "antarctic",
+  "name": "smart-device",
   "private": true,
-  "description": "Проект «Круизы в Антарктику» Акселератор от HTML Academy",
+  "description": "Проект «Умное устройство» Акселератор от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
