@@ -1,0 +1,25 @@
+.page-main {
+  flex-grow: 1;
+}
+
+.page-main h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.5;
+  margin-top: 0;
+
+  @media (--middle-vp) {
+    font-size: 26px;
+  }
+
+  @media (--small-vp) {
+    font-size: 24px;
+  }
+}
+
+.page-main h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 0;
+}

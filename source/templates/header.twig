@@ -1,0 +1,41 @@
+<header class="page-header">
+  <div class="page__wrapper-center">
+
+    <div class="page-header__menu page-header__menu--nojs">
+
+      <a class="page-header__logo-link logo-link">
+        <svg role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
+          <use href="./img/logos.svg#logo"></use>
+        </svg>
+      </a>
+
+      <nav class="page-header__menu-nav main-nav">
+
+        <button class="page-header__menu-toggle" type="button" hidden>
+          <span class="page__visual-hidden">Открыть или закрыть меню.</span>
+        </button>
+
+        <ul class="main-nav__list page-header__menu-list">
+          {% for page in pages %}
+            <li class="main-nav__item">
+              <a
+                class="main-nav__link"
+                href="{{ page.path }}"
+                {% if permalink == page.path %}
+                  aria-current="page"
+                {% endif %}
+              >{{ page.name }}</a>
+            </li>
+          {% else %}
+            <li>Из навигации пропали пункты меню 😕 искать в data.js</li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+
+    <div class=" screen screen__wrapper-context">
+      <h1>Круизы в&nbsp;Антарктику</h1>
+      <i>Волшебный мир айсбергов и&nbsp;пингвинов</i>
+    </div>
+  </div>
+</header>
