@@ -1,11 +1,6 @@
 .button {
-  font-family: var(--regular-font);
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.5;
+  font-family: var(--accent-font);
+  font-weight: 700;
   text-decoration: none;
-  color: var(--color-base-dark);
-  background-color: var(--color-base-light);
-  border: none;
   user-select: none;
 }

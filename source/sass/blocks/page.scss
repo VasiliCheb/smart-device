@@ -5,6 +5,11 @@
   scroll-behavior: smooth;
 }
 
+.page ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .page__body {
   display: flex;
   flex-direction: column;
@@ -12,49 +17,7 @@
   min-width: 320px;
   min-height: 100%;
   margin: 0;
-  background-color: var(--color-base-light);
-
-  &--noscroll {
-    position: fixed;
-    height: 100vh;
-    overflow: hidden;
-    scrollbar-width: none;
-    background:
-      linear-gradient(
-        var(--color-gradient-overlay),
-        var(--color-gradient-overlay)
-        );
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-  &--noscroll .screen {
-    z-index: -1;
-  }
-
-  &--noscroll .page-header {
-    background:
-      linear-gradient(
-        var(--color-gradient-overlay),
-        var(--color-gradient-overlay)
-        ),
-      url("../../img/index-top-s@1x.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    @media (--x2) {
-      background:
-        linear-gradient(
-        var(--color-gradient-overlay),
-        var(--color-gradient-overlay)
-        ),
-        url("../../img/index-top-s@2x.jpg") no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-  }
+  background-color: var(--color-bg-base);
 }
 
 .page__visual-hidden {
@@ -71,16 +34,16 @@
 .page__wrapper-center {
   @media (--wide-vp) {
     box-sizing: border-box;
-    max-width: 1250px;
-    padding: 0 45px;
+    max-width: 1220px;
+    padding: 0 50px;
     margin: 0 auto;
   }
 
   @media (--middle-vp) {
-    margin: 0 45px;
+    padding: 0 50px;
   }
 
   @media (--small-vp) {
-    margin: 0 15px;
+    padding: 0 25px;
   }
 }

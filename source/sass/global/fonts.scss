@@ -1,43 +1,45 @@
 @font-face {
-  font-family: "Montserrat";
+  font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src:
-    url("../../fonts/montserrat-regular.woff2") format("woff2"),
-    url("../../fonts/montserrat-regular.woff") format("woff");
+    url("../../fonts/ptmono-regular.woff2") format("woff2"),
+    url("../../fonts/ptmono-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
   src:
-    url("../../fonts/montserrat-medium.woff2") format("woff2"),
-    url("../../fonts/montserrat-medium.woff") format("woff");
+    url("../../fonts/roboto-medium.woff2") format("woff2"),
+    url("../../fonts/roboto-medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Roboto Condensed";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-display: swap;
   src:
-    url("../../fonts/montserrat-semibold.woff2") format("woff2"),
-    url("../../fonts/montserrat-semibold.woff") format("woff");
+    url("../../fonts/roboto-condensed.woff2") format("woff2"),
+    url("../../fonts/roboto-condensed.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src:
-    url("../../fonts/montserrat-bold.woff2") format("woff2"),
-    url("../../fonts/montserrat-bold.woff") format("woff");
+    url("../../fonts/roboto-condensed-bold.woff2") format("woff2"),
+    url("../../fonts/roboto-condensed-bold.woff") format("woff");
 }
 
 :root {
-  --regular-font: "Montserrat", "Impact", sans-serif;
+  --regular-font: "PT Mono", "Courier New", monospace;
+  --accent-font: "Roboto Condensed", "Arial", sans-serif;
+  --medium-font: "Roboto", "Arial", sans-serif;
 }
