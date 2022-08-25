@@ -1,41 +1,26 @@
 <header class="page-header">
   <div class="page__wrapper-center">
+    <div class="page-header__wrapper-grid">
 
-    <div class="page-header__menu page-header__menu--nojs">
-
-      <a class="page-header__logo-link logo-link">
-        <svg role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
+      <a class="page-header__logo-link">
+        <svg role="img" width="70" height="70" aria-label="Логотип компании «Smart Device».">
           <use href="./img/logos.svg#logo"></use>
         </svg>
+        <b>Smart Device</b>
+        <i>умные технологии</i>
       </a>
 
-      <nav class="page-header__menu-nav main-nav">
+      <address class="page-header__contacts">
+        <a class="page-header__email" href="mailto:info@sd.ru">
+          <span>info@sd.ru</span>
+        </a>
+        <a class="page-header__phone" href="tel:+74950005252">
+          <span>+7 (495) 000 52 52</span>
+        </a>
+      </address>
 
-        <button class="page-header__menu-toggle" type="button" hidden>
-          <span class="page__visual-hidden">Открыть или закрыть меню.</span>
-        </button>
+      <button class="page-header__button button" type="button">Заказать звонок</button>
 
-        <ul class="main-nav__list page-header__menu-list">
-          {% for page in pages %}
-            <li class="main-nav__item">
-              <a
-                class="main-nav__link"
-                href="{{ page.path }}"
-                {% if permalink == page.path %}
-                  aria-current="page"
-                {% endif %}
-              >{{ page.name }}</a>
-            </li>
-          {% else %}
-            <li>Из навигации пропали пункты меню 😕 искать в data.js</li>
-          {% endfor %}
-        </ul>
-      </nav>
-    </div>
-
-    <div class=" screen screen__wrapper-context">
-      <h1>Круизы в&nbsp;Антарктику</h1>
-      <i>Волшебный мир айсбергов и&nbsp;пингвинов</i>
     </div>
   </div>
 </header>
