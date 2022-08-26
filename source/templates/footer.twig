@@ -1,81 +1,80 @@
 <footer class="page-footer">
-  <div class="page__footer-grid page__wrapper-center">
+  <div class="page__wrapper-center page-footer__container">
+    <!--<div class="page-footer__wrapper-grid">-->
 
-    <div class="page-footer__location">
-      <iframe class="page-footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1638037165046!5m2!1sru!2sby" allowfullscreen="" loading="lazy"></iframe>
+      <div class="page-footer__wrapper-flex">
+        <a class="page-footer__logo-link logo">
+          <svg role="img" width="55" height="55" aria-label="Логотип компании «Smart Device».">
+            <use href="./img/logos.svg#logo"></use>
+          </svg>
+          <b>Smart Device</b>
+          <i>умные технологии</i>
+        </a>
 
-      <noscript class="page-footer__noscript">
-        <picture>
-          <source srcset="./img/location-l@1x.webp, ./img/location-l@2x.webp 2x" type="image/webp" media="(min-width: 1024px)">
-          <source srcset="./img/location-l@1x.webp, ./img/location-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-          <source srcset="./img/location-l@1x.webp, ./img/location-l@2x.webp 2x" type="image/webp">
-          <!-- 1х: 560px; 2x: 1120px -->
-          <img src="./img/location-l@1x.png" srcset="./img/location-l@2x.png 2x" width="560" height="306" loading="lazy" alt="Карта местности. Расположение локации на местности.">
-        </picture>
-      </noscript>
-    </div>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--pinterest" href="#">
+              <span class="page__visual-hidden">Пинтерест.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--ok" href="#">
+              <span class="page__visual-hidden">Однокласники.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--wk" href="#">
+              <span class="page__visual-hidden">В контакте.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-    <div class=" page-footer__contacts contacts" id="contacts">
-      <em class="contacts__agitation">У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</em>
-      <address class="contacts__info">
-        <p>
-          <span>г.&nbsp;Санкт Петербург,</span>
-          <span>ул.&nbsp;Большая Конюшенная, 19/8</span>
-        </p>
-        <a class="contacts__phone" href="tel:+788002000000">8-800-200-00-00</a>
-      </address>
-    </div>
-  </div>
+      <nav class="page-footer__nav main-nav">
+        <em>Разделы сайта</em>
 
-  <div class="page-footer__container">
-    <div class=" page-footer__wrapper page__wrapper-center">
-
-      <a class="page-footer__logo-link logo-link">
-        <svg role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
-          <use href="./img/logos.svg#logo"></use>
-        </svg>
-      </a>
-
-      <nav class="page-footer__main-nav main-nav">
-
-        <ul class="main-nav__list main-nav__list--footer">
-          {% for page in pages %}
-            <li class="main-nav__item">
-              <a
-                class="main-nav__link"
-                href="{{ page.path }}"
-                {% if permalink == page.path %}
-                  aria-current="page"
-                {% endif %}
-              >{{ page.name }}</a>
-            </li>
-          {% else %}
-            <li>Из навигации пропали пункты меню 😕 искать в data.js</li>
-          {% endfor %}
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">О Компаниии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Продукты</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Производство печатных плат</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Монтаж печатных плат</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Комплектующие</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Контакты</a>
+          </li>
         </ul>
       </nav>
 
-      <div class="page-footer__social social">
+      <address class="page-footer__contacts footer-contacts">
+        <em>Наш офис</em>
+        <p>г.&nbsp;Мытищи, Олимпийский проспект, д.10</p>
 
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <span class="page__visual-hidden">Фейсбук</span>
-            </a>
+        <ul class="footer-contacts__list">
+          <li class="footer-contacts__item">
+            <a class="footer-contacts__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">
-              <span class="page__visual-hidden">Инстаграм</span>
-            </a>
+          <li class="footer-contacts__item">
+            <a class="footer-contacts__phone" href="tel:+79253895829">+7 (925) 389-58-29</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
-              <span class="page__visual-hidden">Твиттер</span>
-            </a>
+          <li class="footer-contacts__item">
+            <a class="footer-contacts__phone" href="tel:+79253647813">+7 (925) 364-78-13</a>
           </li>
         </ul>
+      </address>
 
-      </div>
-    </div>
+    <!--</div>-->
   </div>
 </footer>
