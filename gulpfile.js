@@ -87,16 +87,6 @@ export function copyImages () {
     .pipe(dest("build/img"))
 }
 
-export function createWebp () {
-  return src("./source/img/**/*.{jpg,png}")
-    .pipe(
-      squoosh({
-        webp: {}
-      })
-    )
-    .pipe(dest("./build/img"))
-}
-
 export function createSprite () {
   return src("./source/icons/*.svg")
     .pipe(svgSprite({
@@ -162,8 +152,7 @@ export const build = series(
     processScripts,
     createSprite,
     copyAssets,
-    optimizeImages,
-    createWebp
+    optimizeImages
   )
 );
 
@@ -177,8 +166,7 @@ export default series(
     processScripts,
     createSprite,
     copyAssets,
-    copyImages,
-    createWebp
+    copyImages
   ),
   series(
     startServer,

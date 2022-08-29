@@ -1,0 +1,107 @@
+.screen {
+  position: relative;
+  background:
+    linear-gradient(180deg, var(--color-gradient-image-clear) 71.72%, var(--color-gradient-image) 100%),
+    url("../../img/screen-l@1x.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  background-color: var(--color-bg-screen);
+  margin-top: -120px;
+  padding-top: 305px;
+  padding-bottom: 280px;
+  z-index: -1;
+
+  @media (--x2) {
+    background:
+      linear-gradient(180deg, var(--color-gradient-image-clear) 71.72%, var(--color-gradient-image) 100%),
+      url("../../img/screen-l@2x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (--middle-vp) {
+    background:
+      linear-gradient(180deg, var(--color-gradient-image-clear) 71.72%, var(--color-gradient-image) 100%),
+      url("../../img/screen-m@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -100px;
+    padding-top: 180px;
+    padding-bottom: 205px;
+
+    @media (--x2) {
+      background:
+        linear-gradient(180deg, var(--color-gradient-image-clear) 71.72%, var(--color-gradient-image) 100%),
+        url("../../img/screen-m@2x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @media (--small-vp) {
+    background:
+      linear-gradient(180deg, var(--color-gradient-image-clear) 71.72%, var(--color-gradient-image) 100%),
+      url("../../img/screen-s@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -70px;
+    padding-top: 150px;
+    padding-bottom: 190px;
+
+    @media (--x2) {
+      background:
+        linear-gradient(180deg, var(--color-gradient-image-clear) 71.72%, var(--color-gradient-image) 100%),
+        url("../../img/screen-s@2x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.screen h1 {
+  margin-bottom: 40px;
+}
+
+.screen i {
+  display: block;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.55;
+  color: var(--color-base-light);
+  margin-bottom: 40px;
+
+  @media (--small-vp) {
+    font-size: 14px;
+  }
+}
+
+.screen__button {
+  display: grid;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-base-light);
+  background-color: var(--color-accent);
+  place-items: center;
+  width: 410px;
+  min-height: 55px;
+  border-radius: 3px;
+
+  &::before {
+    content: "Получить бесплатную консультацию";
+    display: block;
+  }
+
+  @media (--small-vp) {
+    font-size: 14px;
+    line-height: 16px;
+    width: 270px;
+    min-height: 40px;
+
+    &::before {
+      content: "Бесплатная консультация";
+    }
+  }
+}
