@@ -6,7 +6,7 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  background-color: var(--color-bg-screen);
+  background-color: var(--color-bg-image);
   margin-top: -120px;
   padding-top: 305px;
   padding-bottom: 280px;
@@ -88,20 +88,24 @@
   width: 410px;
   min-height: 55px;
   border-radius: 3px;
-
-  &::before {
-    content: "Получить бесплатную консультацию";
-    display: block;
-  }
+  text-align: center;
 
   @media (--small-vp) {
     font-size: 14px;
     line-height: 16px;
     width: 270px;
     min-height: 40px;
+  }
+}
 
-    &::before {
-      content: "Бесплатная консультация";
-    }
+.screen__button-base {
+  @media (--small-vp) {
+    display: none;
+  }
+}
+
+.screen__button-mobile {
+  @media (--small-vp) {
+    display: block;
   }
 }

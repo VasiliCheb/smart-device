@@ -1,0 +1,105 @@
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__list {
+  @media (--not-small-vp) {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__dispatch-set {
+  @media (--not-small-vp) {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form input,
+.form textarea {
+  font-family: var(--regular-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-base-dark);
+  background-color: var(--color-bg-input);
+  border-radius: 3px;
+  border: none;
+  width: 100%;
+}
+
+.form input {
+  height: 50px;
+}
+
+.form textarea {
+  min-height: 155px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: var(--color-white);
+}
+
+.form__checkbox-label span {
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.8;
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-white);
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--color-form-button);
+  width: 100%;
+  min-height: 45px;
+  height: fit-content;
+}
+
+.form__checkbox-label input {
+  display: grid;
+  position: relative;
+  margin: 0;
+  appearance: none;
+  place-items: center;
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--color-white);
+    border-radius: 2px;
+  }
+
+  &:checked::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../icons/sprite.svg#checkbox");
+    width: 11px;
+    height: 11px;
+  }
+}
+
+.form__checkbox-label {
+  display: flex;
+  align-items: center;
+}

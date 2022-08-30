@@ -30,4 +30,8 @@
 .page-footer__container {
   display: flex;
   justify-content: space-between;
+
+  @media (--small-vp) {
+    flex-direction: column;
+  }
 }

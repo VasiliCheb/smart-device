@@ -1,0 +1,74 @@
+.about-company__container {
+  padding: 120px 0 100px 250px;
+
+  @media (--not-small-vp) {
+    background-image: url("../../img/year-l@1x.png");
+    background-repeat: no-repeat;
+    background-size: 146px 320px;
+    background-position: left 0 top 120px;
+
+    @media (--x2) {
+      background-image: url("../../img/year-l@2x.png");
+    }
+  }
+
+  @media (--middle-vp) {
+    padding: 80px 0 80px 175px;
+    background-position: left 0 top 80px;
+  }
+
+  @media (--small-vp) {
+    padding: 50px 0 80px;
+  }
+}
+
+.about-company h2 {
+  font-family: var(--accent-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  margin-top: 0;
+  padding-top: 5px;
+  margin-bottom: 15px;
+
+  @media (--small-vp) {
+    font-size: 28px;
+    line-height: 140.62%;
+    padding-top: 0;
+  }
+}
+
+.about-company p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 0;
+
+  @media (--small-vp) {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
+}
+
+.about-company__button {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  min-width: 180px;
+  min-height: 45px;
+  border: 1px solid var(--color-accent);
+  border-radius: 3px;
+  background-color: transparent;
+
+  @media (--small-vp) {
+    min-width: 160px;
+    min-height: 35px;
+  }
+
+  &::before {
+    content: "Подробнее";
+    display: block;
+  }
+}

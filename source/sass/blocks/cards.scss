@@ -1,0 +1,261 @@
+.cards {
+  font-family: var(--accent-font);
+  background-color: var(--color-bg-dark);
+  color: var(--color-white);
+  padding-top: 70px;
+  padding-bottom: 140px;
+
+  @media (--middle-vp) {
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
+
+  @media (--small-vp) {
+    padding-top: 50px;
+    padding-bottom: 85px;
+  }
+}
+
+.cards h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0;
+
+  @media (--small-vp) {
+    font-size: 18px;
+  }
+}
+
+.cards p {
+  font-size: 36px;
+  line-height: 51px;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  @media (--small-vp) {
+    font-size: 28px;
+    line-height: 140.62%;
+    margin-bottom: 40px;
+  }
+}
+
+.cards__text-base {
+  @media (--small-vp) {
+    display: none;
+  }
+}
+
+.cards__text-mobile {
+  @media (--small-vp) {
+    display: block;
+  }
+}
+
+.cards__list a {
+  color: var(--color-white);
+}
+
+.cards__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 85px;
+  margin: 0;
+
+  @media (--not-wide-vp) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.cards__item {
+  min-height: 650px;
+
+  @media (--not-wide-vp) {
+    min-height: 250px;
+  }
+}
+
+.cards__link {
+  position: relative;
+  display: grid;
+  background-color: var(--color-bg-image);
+  width: 100%;
+  min-height: 100%;
+  padding: 50px 40px;
+
+  @media (--middle-vp) {
+    padding: 40px 45px;
+  }
+
+  @media (--small-vp) {
+    padding: 30px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url("../../icons/sprite.svg#arrow");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-accent);
+    background-size: 10px;
+    width: 60px;
+    height: 60px;
+    border-top-left-radius: 3px;
+    bottom: 0;
+    right: 0;
+
+    @media (--small-vp) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+
+  &--production {
+    background:
+      linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+      url("../../img/card-production-l@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (--x2) {
+      background:
+        linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+        url("../../img/card-production-l@2x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (--middle-vp) {
+      background:
+        linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+        url("../../img/card-production-m@1x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      @media (--x2) {
+        background:
+          linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+          url("../../img/card-production-m@2x.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    @media (--small-vp) {
+      background:
+        linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+        url("../../img/card-production-s@1x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      @media (--x2) {
+        background:
+          linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+          url("../../img/card-production-s@2x.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+
+  &--mounting {
+    background:
+      linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+      url("../../img/card-mounting-l@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (--x2) {
+      background:
+        linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+        url("../../img/card-mounting-l@2x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (--middle-vp) {
+      background:
+        linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+        url("../../img/card-mounting-m@1x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      @media (--x2) {
+        background:
+          linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+          url("../../img/card-mounting-m@2x.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    @media (--small-vp) {
+      background:
+        linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+        url("../../img/card-mounting-s@1x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      @media (--x2) {
+        background:
+          linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+          url("../../img/card-mounting-s@2x.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+
+  &--components {
+    background:
+      linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+      url("../../img/card-components-l@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (--x2) {
+      background:
+        linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+        url("../../img/card-components-l@2x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (--middle-vp) {
+      background:
+        linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+        url("../../img/card-components-m@1x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      @media (--x2) {
+        background:
+          linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+          url("../../img/card-components-m@2x.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    @media (--small-vp) {
+      background:
+        linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+        url("../../img/card-components-s@1x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      @media (--x2) {
+        background:
+          linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+          url("../../img/card-components-s@2x.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}

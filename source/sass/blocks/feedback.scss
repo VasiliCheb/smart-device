@@ -1,0 +1,65 @@
+.feedback {
+  color: var(--color-white);
+  padding-top: 170px;
+  padding-bottom: 250px;
+  background-color: var(--color-bg-feedback);
+
+  @media (--wide-vp) {
+    background-image: url("../../img/figure-l@1x.png");
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: left 0 top -53px;
+  }
+
+
+  @media (--middle-vp) {
+    padding-top: 50px;
+    padding-bottom: 125px;
+  }
+
+  @media (--small-vp) {
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+}
+
+.feedback p {
+  font-family: var(--accent-font);
+  font-size: 36px;
+  line-height: 51px;
+
+  @media (--small-vp) {
+    font-size: 30px;
+    line-height: 140.62%;
+  }
+}
+
+.feedback i {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (--small-vp) {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
+}
+
+.feedback__container {
+  width: 100%;
+
+  @media (--wide-vp) {
+    width: 50%;
+    margin-left: auto;
+  }
+}
+
+.feedback__wrapper {
+  @media (--wide-vp) {
+    width: 100%;
+    background-image: url("../../img/paper-airplane-l@1x.png");
+    background-repeat: no-repeat;
+    background-size: calc(50% - 115px) auto;
+    background-position: left 0 top 0;
+  }
+}

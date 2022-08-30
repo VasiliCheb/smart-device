@@ -60,9 +60,16 @@
           <div class="screen__container">
             <h1>Печатные платы</h1>
             <i>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</i>
+
             <a class="button screen__button" href="#">
-              <span class="page__visual-hidden">Запрос бесплатной консультации.</span>
-            </a>
+              <div class="screen__button-base">
+                <span>Получить бесплатную консультацию</span>
+              </div>
+              <div class="screen__button-mobile" hidden>
+                <span>Бесплатная консультация</span>
+              </div>
+              </a>
+
           </div>
         </div>
       </section>
@@ -91,48 +98,54 @@
       </section>
 
       <section class="about-company page__wrapper-center">
-        <h2>О компании</h2>
+        <div class="about-company__container">
 
-        <div class="about-company__visible-text">
-          <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997 года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10 дней.</p>
-          <p>Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+          <h2>О компании</h2>
+
+          <div class="about-company__visible-text">
+            <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997 года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10 дней.</p>
+            <p>Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+          </div>
+
+          <div class="about-company__hidden-text">
+            <p>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000 клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14 офисов по&nbsp;всей стране и&nbsp;20 городов присутствия.</p>
+            <p>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
+          </div>
+
+          <button class="about-company__button button" type="button">
+            <span class="page__visual-hidden">Открыть или скрыть текст</span>
+          </button>
+
         </div>
-
-        <div class="about-company__hidden-text">
-          <p>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000 клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14 офисов по&nbsp;всей стране и&nbsp;20 городов присутствия.</p>
-          <p>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
-        </div>
-
-        <button class="about-company__button button" type="button">Подробнее</button>
       </section>
 
       <section class="cards">
         <div class="page__wrapper-center">
           <h2 class="page__visual-hidden">Товары и услуги</h2>
-          <p>Smart Device предлагает следующие товары и&nbsp;услуги</p>
+
+          <div class="cards__text-base">
+            <p>Smart Device предлагает следующие товары и&nbsp;услуги</p>
+          </div>
+          <div class="cards__text-mobile" hidden>
+            <p>Товары и&nbsp;услуги Smart Device</p>
+          </div>
 
           <ul class="cards__list">
-            <li class="cards__item cards__item--production">
-              <a class="cards__link" href="#">
-                <div class="cards__container">
-                  <h3>Производство печатных плат</h3>
-                </div>
+            <li class="cards__item">
+              <a class="cards__link cards__link--production" href="#">
+                <h3>Производство печатных плат</h3>
               </a>
             </li>
 
-            <li class="cards__item cards__item--mounting">
-              <a class="cards__link" href="#">
-                <div class="cards__container">
-                  <h3>Монтаж печатных плат</h3>
-                </div>
+            <li class="cards__item">
+              <a class="cards__link cards__link--mounting" href="#">
+                <h3>Монтаж печатных плат</h3>
               </a>
             </li>
 
-            <li class="cards__item cards__item--components">
-              <a class="cards__link" href="#">
-                <div class="cards__container">
-                  <h3>Комплектующие для светотехники</h3>
-                </div>
+            <li class="cards__item">
+              <a class="cards__link cards__link--components" href="#">
+                <h3>Комплектующие для светотехники</h3>
               </a>
             </li>
           </ul>
@@ -141,45 +154,47 @@
       </section>
 
       <section class="feedback">
-        <div class="page__wrapper-center">
-          <h2 class="page__visual-hidden">Форма обратной связи</h2>
-          <p>Остались вопросы? Задайте их&nbsp;нам!</p>
-          <i>Мы&nbsp;проконсультируем Вас бесплатно</i>
+        <div class="feedback__wrapper page__wrapper-center">
+          <div class="feedback__container">
+            <h2 class="page__visual-hidden">Форма обратной связи</h2>
+            <p>Остались вопросы? Задайте их&nbsp;нам!</p>
+            <i>Мы&nbsp;проконсультируем Вас бесплатно</i>
 
-          <form class="form" id="user-data" action="https://echo.htmlacademy.ru/" method="get" autocomplete="off">
-            <fieldset class="form__fieldset">
-              <legend class="page__visual-hidden">Данные пользователа для консультации:</legend>
-              <ul class="form__list">
-                <li class="form__item">
-                  <div class="form__field">
-                    <label class="page__visual-hidden" for="user-name">Имя:*</label>
-                    <input id="user-name" type="text" placeholder="Имя" name="name" required>
-                  </div>
-                </li>
-                <li class="form__item">
-                  <div class="form__field">
-                    <label class="page__visual-hidden" for="user-phone">Телефон:*</label>
-                    <input id="user-phone" type="tel" placeholder="Телефон" name="phone" required pattern="[0-9()+\s-]+">
-                  </div>
-                </li>
-              </ul>
-            </fieldset>
+            <form class="form" id="user-data" action="https://echo.htmlacademy.ru/" method="get" autocomplete="off">
+              <fieldset class="form__fieldset">
+                <legend class="page__visual-hidden">Данные пользователа для консультации:</legend>
+                <ul class="form__list">
+                  <li class="form__item">
+                    <div class="form__field">
+                      <label class="page__visual-hidden" for="user-name">Имя:*</label>
+                      <input id="user-name" type="text" placeholder="Имя" name="name" required>
+                    </div>
+                  </li>
+                  <li class="form__item">
+                    <div class="form__field">
+                      <label class="page__visual-hidden" for="user-phone">Телефон:*</label>
+                      <input id="user-phone" type="tel" placeholder="Телефон" name="phone" required pattern="[0-9()+\s-]+">
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <div class="form__question">
-              <label class="page__visual-hidden" for="question">Задайте нам ворос.</label>
-              <textarea id="question" name="question">Ваш вопрос</textarea>
-            </div>
+              <div class="form__question">
+                <label class="page__visual-hidden" for="question">Задайте нам ворос.</label>
+                <textarea id="question" name="question" placeholder="Ваш вопрос"></textarea>
+              </div>
 
-            <div class="form__dispatch-set">
-              <button class="button form__button" type="submit">Задать вопрос</button>
+              <div class="form__dispatch-set">
+                <button class="button form__button" type="submit">Задать вопрос</button>
 
-              <label class="form__checkbox-label">
-                <input id="user-agreement" type="checkbox" name="personal-data" value="agreement" checked required>
-                <span class="form__checkbox-control">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
-              </label>
-            </div>
+                <label class="form__checkbox-label">
+                  <input id="user-agreement" type="checkbox" name="personal-data" value="agreement" checked required>
+                  <span class="form__checkbox-control">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                </label>
+              </div>
 
-          </form>
+            </form>
+          </div>
         </div>
       </section>
 

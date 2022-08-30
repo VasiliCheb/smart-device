@@ -1,0 +1,42 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+
+  &::before {
+    content: "";
+    display: block;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: var(--color-bg-base);
+    width: 30px;
+    height: 30px;
+  }
+
+  &--pinterest {
+    background-color: var(--color-bg-base);
+    border-radius: 50%;
+
+    &::before {
+      mask-image: url("../../icons/sprite.svg#social-pinterest");
+      background-color: var(--color-base-dark);
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &--ok::before {
+    mask-image: url("../../icons/sprite.svg#social-ok");
+  }
+
+  &--wk::before {
+    mask-image: url("../../icons/sprite.svg#social-wk");
+  }
+}
