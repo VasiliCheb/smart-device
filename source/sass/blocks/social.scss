@@ -40,3 +40,12 @@
     mask-image: url("../../icons/sprite.svg#social-wk");
   }
 }
+
+.social__item {
+  margin-right: 25px;
+
+  @media (--middle-vp) {
+    margin-left: 25px;
+    margin-right: 0;
+  }
+}

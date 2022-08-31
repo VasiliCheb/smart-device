@@ -33,6 +33,20 @@
   }
 }
 
+.page-header__logo-link b,
+.page-header__logo-link i {
+  @media (--small-vp) {
+    display: none;
+  }
+}
+
+.page-header__logo-link svg {
+  @media (--small-vp) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 .page-header__contacts {
   padding-top: 15px;
 

@@ -1,4 +1,14 @@
+.main-nav {
+  padding-top: 5px;
+}
+
 .main-nav__list {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.main-nav__item {
+  margin-bottom: 10px;
 }

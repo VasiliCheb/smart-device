@@ -11,11 +11,6 @@
   height: 55px;
   grid-column: 1 / 2;
   grid-row: 1 / -1;
-
-  @media (--small-vp) {
-    width: 35px;
-    height: 35px;
-  }
 }
 
 .logo b {
@@ -41,11 +36,4 @@
   grid-column: 2 / -1;
   grid-row: 2 / -1;
   margin-top: -10px;
-}
-
-.logo b,
-.logo i {
-  @media (--small-vp) {
-    display: none;
-  }
 }

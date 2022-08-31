@@ -5,10 +5,18 @@
 }
 
 .form__list {
+  display: grid;
+  margin-top: 0;
+  margin-bottom: 20px;
+
   @media (--not-small-vp) {
-    display: grid;
     gap: 30px;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (--small-vp) {
+    gap: 20px;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -32,6 +40,7 @@
   border-radius: 3px;
   border: none;
   width: 100%;
+  padding: 15px;
 }
 
 .form input {
@@ -40,11 +49,20 @@
 
 .form textarea {
   min-height: 155px;
+  padding-top: 25px;
 }
 
 .form input::placeholder,
 .form textarea::placeholder {
   color: var(--color-white);
+}
+
+.form__question {
+  margin-bottom: 35px;
+
+  @media (--small-vp) {
+    margin-bottom: 30px;
+  }
 }
 
 .form__checkbox-label span {
@@ -66,6 +84,11 @@
   width: 100%;
   min-height: 45px;
   height: fit-content;
+  padding: 5px 1em;
+
+  @media (--small-vp) {
+    margin-bottom: 25px;
+  }
 }
 
 .form__checkbox-label input {
@@ -77,6 +100,8 @@
   width: fit-content;
   height: fit-content;
   background-color: transparent;
+  padding: 0;
+  margin-right: 10px;
 
   &::before {
     display: block;
