@@ -1,0 +1,45 @@
+.accordion {
+  @media (--small-vp) {
+    &--opened button::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 2px;
+      width: 15px;
+      height: 1px;
+      background-color: var(--color-bg-base);
+    }
+  }
+}
+
+
+.accordion button {
+  @media (--small-vp) {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 19px;
+    height: 19px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 2px;
+      width: 15px;
+      height: 1px;
+      background-color: var(--color-bg-base);
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
+  }
+}

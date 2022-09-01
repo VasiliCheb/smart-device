@@ -1,6 +1,27 @@
-.footer-contacts p {
-  margin-top: 0;
-  margin-bottom: 10px;
+.footer-contacts {
+  padding-top: 5px;
+
+  @media (--small-vp) {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      left: -25px;
+      bottom: 0;
+      background-color: var(--color-bg-base);
+      box-shadow: 50px 0 0 0 var(--color-bg-base);
+      opacity: 70%;
+    }
+  }
+}
+
+.footer-contacts__list p {
+  margin: 0;
 }
 
 .footer-contacts__list {

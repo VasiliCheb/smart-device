@@ -24,6 +24,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 20px;
+
+  @media (--small-vp) {
+    margin-bottom: 15px;
+  }
 }
 
 .page-footer__contacts a,
@@ -48,27 +52,46 @@
   display: flex;
   justify-content: space-between;
 
-  @media (--not-wide-vp) {
+  @media (--middle-vp) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (--small-vp) {
     flex-direction: column;
   }
 }
 
-.page-footer__wrapper-flex {
+.page-footer__wrapper-block {
   display: flex;
   flex-direction: column;
 
   @media (--wide-vp) {
-    min-width: 220px;
+    min-width: 230px;
   }
 
   @media (--middle-vp) {
+    grid-column: 1 / -1;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 35px;
   }
 
   @media (--small-vp) {
+    position: relative;
     align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      left: -25px;
+      bottom: 0;
+      background-color: var(--color-bg-base);
+      box-shadow: 50px 0 0 0 var(--color-bg-base);
+      opacity: 70%;
+    }
   }
 }
 
