@@ -9,22 +9,26 @@
   margin-top: 0;
   margin-bottom: 20px;
 
-  @media (--not-small-vp) {
-    gap: 30px;
-    grid-template-columns: 1fr 1fr;
-  }
+  &--index {
+    @media (--not-small-vp) {
+      gap: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
 
-  @media (--small-vp) {
-    gap: 20px;
-    grid-template-columns: 1fr;
+    @media (--small-vp) {
+      gap: 20px;
+      grid-template-columns: 1fr;
+    }
   }
 }
 
 .form__dispatch-set {
-  @media (--not-small-vp) {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr 1fr;
+  &--index {
+    @media (--not-small-vp) {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 
@@ -58,10 +62,12 @@
 }
 
 .form__question {
-  margin-bottom: 35px;
+  &--index {
+    margin-bottom: 35px;
 
-  @media (--small-vp) {
-    margin-bottom: 30px;
+    @media (--small-vp) {
+      margin-bottom: 30px;
+    }
   }
 }
 
