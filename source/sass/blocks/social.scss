@@ -9,6 +9,30 @@
   justify-content: center;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
+
+  &:focus {
+    outline: 2px solid var(--color-base-light);
+    outline-offset: 2px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-base-light);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 
   &::before {
     content: "";
@@ -22,7 +46,6 @@
 
   &--pinterest {
     background-color: var(--color-bg-base);
-    border-radius: 50%;
 
     &::before {
       mask-image: url("../../icons/sprite.svg#social-pinterest");

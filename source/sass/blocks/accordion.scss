@@ -22,8 +22,34 @@
     width: 20px;
     height: 20px;
     background-color: transparent;
-    cursor: pointer;
     border: none;
+
+    &:focus {
+      outline: 1px solid var(--color-bg-base);
+      outline-offset: 2px;
+      border-radius: 1px;
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: none;
+      outline-offset: revert;
+      border-radius: initial;
+    }
+
+    &:focus-visible {
+      outline: 1px solid var(--color-bg-base);
+      outline-offset: 2px;
+      border-radius: 1px;
+    }
+
+    &:hover {
+      opacity: 80%;
+      cursor: pointer;
+    }
+
+    &:active {
+      opacity: 60%;
+    }
 
     &::before,
     &::after {

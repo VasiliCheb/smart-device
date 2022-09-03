@@ -95,6 +95,38 @@
   }
 }
 
+.page-footer__nav a,
+.page-footer__contacts a {
+  display: inline-block;
+  width: fit-content;
+
+  &:focus {
+    outline: 1px solid var(--color-base-light);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+    border-radius: initial;
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--color-base-light);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
+
 .page-footer__nav {
   @media (--wide-vp) {
     max-width: 470px;

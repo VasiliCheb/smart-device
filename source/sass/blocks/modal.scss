@@ -54,8 +54,34 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
-  cursor: pointer;
   border: none;
+
+  &:focus {
+    outline: 1px solid var(--color-white);
+    outline-offset: 0;
+    border-radius: 3px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+    border-radius: initial;
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--color-white);
+    outline-offset: 0;
+    border-radius: 3px;
+  }
+
+  &:hover {
+    opacity: 80%;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 
   &::before,
   &::after {

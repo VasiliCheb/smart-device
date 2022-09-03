@@ -93,6 +93,29 @@
     padding: 30px;
   }
 
+  &:focus {
+    outline: 1px solid var(--color-white);
+    outline-offset: 2px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--color-white);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
   &::before {
     position: absolute;
     content: "";
