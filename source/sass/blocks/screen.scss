@@ -59,7 +59,7 @@
 }
 
 .screen h1 {
-  margin-bottom: 40px;
+  margin-bottom: 31px;
 }
 
 .screen i {
@@ -68,10 +68,20 @@
   font-size: 22px;
   line-height: 1.55;
   color: var(--color-base-light);
-  margin-bottom: 40px;
+  margin-bottom: 47px;
+
+  @media (--wide-vp) {
+    width: 60%;
+  }
 
   @media (--small-vp) {
     font-size: 14px;
+  }
+}
+
+.screen__container {
+  @media (--wide-vp) {
+    padding-left: 125px;
   }
 }
 

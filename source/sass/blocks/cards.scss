@@ -2,7 +2,7 @@
   font-family: var(--accent-font);
   background-color: var(--color-bg-dark);
   color: var(--color-white);
-  padding-top: 70px;
+  padding-top: 66px;
   padding-bottom: 140px;
 
   @media (--middle-vp) {
@@ -22,6 +22,7 @@
   font-size: 20px;
   line-height: 30px;
   margin-top: 0;
+  width: 64%;
 
   @media (--small-vp) {
     font-size: 18px;
@@ -32,7 +33,7 @@
   font-size: 36px;
   line-height: 51px;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 
   @media (--small-vp) {
     font-size: 28px;

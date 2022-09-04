@@ -1,5 +1,6 @@
 .main-nav {
-  padding-top: 5px;
+  padding-top: 7px;
+  padding-left: 58px;
 
   @media (--small-vp) {
     position: relative;
@@ -26,7 +27,6 @@
 
   @media (--wide-vp) {
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
   }
 }
 
@@ -34,6 +34,13 @@
   margin: 0;
 }
 
+
+.main-nav__list--after {
+  @media (--wide-vp) {
+    margin-left: 43px;
+  }
+}
+
 .main-nav__item {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }

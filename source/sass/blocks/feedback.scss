@@ -1,7 +1,7 @@
 .feedback {
   color: var(--color-white);
-  padding-top: 170px;
-  padding-bottom: 250px;
+  padding-top: 166px;
+  padding-bottom: 249px;
   background-color: var(--color-bg-feedback);
 
   &--index {
@@ -30,7 +30,8 @@
   font-size: 36px;
   line-height: 51px;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  margin-left: -4px;
 
   &--index {
     @media (--middle-vp) {
@@ -71,6 +72,8 @@
   @media (--wide-vp) {
     width: 50%;
     margin-left: auto;
+    padding-left: 20px;
+    padding-right: 10px;
   }
 }
 

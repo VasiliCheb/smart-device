@@ -1,11 +1,11 @@
 .about-company__container {
-  padding: 120px 0 100px 250px;
+  padding: 120px 0 119px 250px;
 
   @media (--not-small-vp) {
     background-image: url("../../img/year-l@1x.png");
     background-repeat: no-repeat;
     background-size: 146px 320px;
-    background-position: left 0 top 120px;
+    background-position: left 4px top 120px;
 
     @media (--x2) {
       background-image: url("../../img/year-l@2x.png");
@@ -29,8 +29,7 @@
   font-size: 36px;
   line-height: 51px;
   margin-top: 0;
-  padding-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   @media (--small-vp) {
     font-size: 28px;
@@ -43,6 +42,7 @@
   font-size: 16px;
   line-height: 22px;
   margin-top: 0;
+  margin-bottom: 20px;
 
   @media (--small-vp) {
     font-size: 14px;
@@ -61,6 +61,7 @@
   border: 1px solid var(--color-accent);
   border-radius: 3px;
   background-color: transparent;
+  margin-top: 20px;
 
   @media (--small-vp) {
     min-width: 160px;

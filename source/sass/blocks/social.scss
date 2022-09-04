@@ -72,3 +72,9 @@
     margin-right: 0;
   }
 }
+
+.social__item:first-child {
+  @media (--wide-vp) {
+    order: 1;
+  }
+}

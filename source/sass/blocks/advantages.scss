@@ -21,8 +21,8 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 22px;
+  margin-bottom: 14px;
 }
 
 .advantages__item p {
@@ -36,9 +36,10 @@
 
 .advantages__item {
   position: relative;
-  padding: 40px 45px 35px;
+  padding: 40px 45px 40px;
   outline: 1px solid var(--color-border);
   outline-offset: -1px;
+  min-height: 300px;
 
   @media (--small-vp) {
     padding: 30px 30px 35px;
