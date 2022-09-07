@@ -19,16 +19,18 @@
   margin: auto;
   border-radius: 3px;
   max-width: 500px;
-  padding: 40px;
+  padding: 37px 40px 44px;
 }
 
 .modal__block p {
   font-size: 30px;
   line-height: 140.62%;
+  margin-bottom: 4px;
 }
 
 .modal__block i {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
+  width: 90%;
 }
 
 .modal__list {
@@ -40,8 +42,13 @@
   margin-bottom: 25px;
 }
 
+.modal__dispatch-set label {
+  margin-left: 9px;
+}
+
 .modal__dispatch-set button {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  width: 100%;
 }
 
 .modal__button-close {

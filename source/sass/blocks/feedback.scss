@@ -1,15 +1,15 @@
 .feedback {
   color: var(--color-white);
-  padding-top: 165px;
-  padding-bottom: 249px;
   background-color: var(--color-bg-feedback);
 
   &--index {
     @media (--wide-vp) {
+      padding-bottom: 249px;
+      padding-top: 165px;
       background-image: url("../../img/figure-l@1x.png");
       background-repeat: no-repeat;
-      background-size: 51% 109.5%;
-      background-position: left 0 top -79px;
+      background-size: 51% 109.7%;
+      background-position: bottom -2px left 0;
     }
 
 
@@ -30,11 +30,14 @@
   font-size: 36px;
   line-height: 51px;
   margin-top: 0;
-  margin-bottom: 12px;
-  margin-left: -5px;
 }
 
 .feedback--index p {
+  @media (--wide-vp) {
+    margin-left: -5px;
+    margin-bottom: 12px;
+  }
+
   @media (--not-wide-vp) {
     margin-bottom: 7px;
     margin-left: 0;
