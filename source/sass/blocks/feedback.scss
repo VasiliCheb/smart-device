@@ -1,6 +1,6 @@
 .feedback {
   color: var(--color-white);
-  padding-top: 166px;
+  padding-top: 165px;
   padding-bottom: 249px;
   background-color: var(--color-bg-feedback);
 
@@ -8,19 +8,19 @@
     @media (--wide-vp) {
       background-image: url("../../img/figure-l@1x.png");
       background-repeat: no-repeat;
-      background-size: 50% 100%;
-      background-position: left 0 top -72px;
+      background-size: 51% 109.5%;
+      background-position: left 0 top -79px;
     }
 
 
     @media (--middle-vp) {
-      padding-top: 50px;
-      padding-bottom: 125px;
+      padding-top: 45px;
+      padding-bottom: 123px;
     }
 
     @media (--small-vp) {
-      padding-top: 50px;
-      padding-bottom: 90px;
+      padding-top: 47px;
+      padding-bottom: 88px;
     }
   }
 }
@@ -31,18 +31,18 @@
   line-height: 51px;
   margin-top: 0;
   margin-bottom: 12px;
-  margin-left: -4px;
+  margin-left: -5px;
+}
 
-  &--index {
-    @media (--middle-vp) {
-      margin-bottom: 10px;
-    }
+.feedback--index p {
+  @media (--not-wide-vp) {
+    margin-bottom: 7px;
+    margin-left: 0;
+  }
 
-    @media (--small-vp) {
-      font-size: 30px;
-      line-height: 140.62%;
-      margin-bottom: 20px;
-    }
+  @media (--small-vp) {
+    font-size: 30px;
+    line-height: 140.62%;
   }
 }
 
@@ -52,17 +52,17 @@
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 35px;
+}
 
-  &--index {
-    @media (--middle-vp) {
-      margin-bottom: 25px;
-    }
+.feedback--index i {
+  @media (--middle-vp) {
+    margin-bottom: 25px;
+  }
 
-    @media (--small-vp) {
-      font-size: 14px;
-      line-height: 134.4%;
-      margin-bottom: 40px;
-    }
+  @media (--small-vp) {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin-bottom: 33px;
   }
 }
 
@@ -82,7 +82,7 @@
     width: 100%;
     background-image: url("../../img/paper-airplane-l@1x.png");
     background-repeat: no-repeat;
-    background-size: calc(50% - 115px) auto;
-    background-position: left 0 top 75px;
+    background-size: 38.6% auto;
+    background-position: left 50px top 81px;
   }
 }

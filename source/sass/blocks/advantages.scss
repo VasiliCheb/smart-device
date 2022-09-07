@@ -1,6 +1,14 @@
 .advantages {
   padding-top: 120px;
   --hover-color-text: var(--color-base-dark);
+
+  @media (--middle-vp) {
+    padding-top: 80px;
+  }
+
+  @media (--small-vp) {
+    padding-top: 50px;
+  }
 }
 
 .advantages__list {
@@ -21,8 +29,20 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
-  margin-top: 22px;
+  margin-top: 20px;
   margin-bottom: 14px;
+
+  @media (--middle-vp) {
+    margin-top: 15px;
+    margin-bottom: 9px;
+  }
+
+  @media (--small-vp) {
+    font-size: 20px;
+    line-height: 140%;
+    margin-top: 16px;
+    margin-bottom: 9px;
+  }
 }
 
 .advantages__item p {
@@ -32,6 +52,11 @@
   font-size: 16px;
   line-height: 1.35;
   margin-top: 0;
+
+  @media (--small-vp) {
+    font-size: 14px;
+    line-height: 135%;
+  }
 }
 
 .advantages__item {
@@ -41,8 +66,36 @@
   outline-offset: -1px;
   min-height: 300px;
 
+  @media (--middle-vp) {
+    min-height: 360px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+
+    &--detective h3 {
+      margin-top: 13px;
+      margin-bottom: 7px;
+    }
+
+    &--tag h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+  }
+
   @media (--small-vp) {
     padding: 30px 30px 35px;
+    min-height: 340px;
+
+    &--detective,
+    &--tag {
+      min-height: 325px;
+    }
+
+    &--tag h3,
+    &--detective h3 {
+      margin-top: 19px;
+      margin-bottom: 13px;
+    }
   }
 
   &::after {
@@ -81,6 +134,10 @@
 
   &--detective::before {
     mask-image: url("../../icons/sprite.svg#detective");
+
+    @media (--wide-vp) {
+      margin-left: -5px;
+    }
   }
 
   &--tag::before {

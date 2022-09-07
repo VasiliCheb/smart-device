@@ -12,6 +12,13 @@
   grid-row: 1 / -1;
 }
 
+.logo.page-header__logo-link svg {
+  @media (--small-vp) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 .logo b {
   font-family: var(--accent-font);
   font-style: normal;

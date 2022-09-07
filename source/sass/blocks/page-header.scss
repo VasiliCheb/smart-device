@@ -22,7 +22,7 @@
   }
 }
 
-.page-header__wrapper-grid {
+.page-header__wrapper-block {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
 
@@ -34,9 +34,22 @@
 
 .page-header__logo-link {
   margin-left: 0;
-  width: 100%;
   min-width: 215px;
-  margin-right: 40px;
+
+  @media (--wide-vp) {
+    min-width: 215px;
+    width: 100%;
+    margin-right: 120px;
+  }
+
+  @media (--middle-vp) {
+    width: 50%;
+  }
+
+  @media (--small-vp) {
+    min-width: 65px;
+    width: 30%;
+  }
 }
 
 .page-header__logo-link b,
@@ -46,18 +59,12 @@
   }
 }
 
-.page-header__logo-link svg {
-  @media (--small-vp) {
-    width: 35px;
-    height: 35px;
-  }
-}
-
 .page-header__contacts {
   padding-top: 15px;
 
   @media (--middle-vp) {
     padding-top: 10px;
+    width: 50%;
   }
 
   @media (--small-vp) {
@@ -69,11 +76,39 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+
+  @media (--middle-vp) {
+    margin-left: auto;
+    margin-right: -10px;
+    width: fit-content;
+  }
+
+  @media (--small-vp) {
+    margin-left: auto;
+    margin-right: 20px;
+  }
 }
 
 .page-header__item {
   margin-bottom: 10px;
-  margin-left: 120px;
+
+  @media (--wide-vp) {
+    margin-left: 40px;
+    min-width: 212px;
+  }
+
+  @media (--not-wide-vp) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (--middle-vp) {
+    margin-right: 40px;
+  }
+
+  @media (--small-vp) {
+    margin-left: 40px;
+  }
 }
 
 .page-header__link {
@@ -84,12 +119,20 @@
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
-  padding-left: 36px;
   width: fit-content;
 
+  @media (--wide-vp) {
+    padding-left: 36px;
+  }
+
+  @media (--not-wide-vp) {
+    width: 20px;
+    height: 20px;
+  }
+
   &:focus {
-    outline: 1px solid var(--color-base-light);
-    outline-offset: 3px;
+    outline: 1px solid var(--color-accent);
+    outline-offset: 4px;
     border-radius: 1px;
   }
 
@@ -100,8 +143,8 @@
   }
 
   &:focus-visible {
-    outline: 1px solid var(--color-base-light);
-    outline-offset: 3px;
+    outline: 1px solid var(--color-accent);
+    outline-offset: 4px;
     border-radius: 1px;
   }
 

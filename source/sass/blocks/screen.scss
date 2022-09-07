@@ -8,8 +8,8 @@
   width: 100%;
   background-color: var(--color-bg-image);
   margin-top: -120px;
-  padding-top: 305px;
-  padding-bottom: 280px;
+  padding-top: 304px;
+  padding-bottom: 281px;
 
   @media (--x2) {
     background:
@@ -27,7 +27,7 @@
     background-position: center;
     margin-top: -100px;
     padding-top: 180px;
-    padding-bottom: 205px;
+    padding-bottom: 206px;
 
     @media (--x2) {
       background:
@@ -59,7 +59,15 @@
 }
 
 .screen h1 {
-  margin-bottom: 31px;
+  margin-bottom: 32px;
+
+  @media (--middle-vp) {
+    margin-bottom: 0;
+  }
+
+  @media (--small-vp) {
+    margin-bottom: 8px;
+  }
 }
 
 .screen i {
@@ -68,14 +76,19 @@
   font-size: 22px;
   line-height: 1.55;
   color: var(--color-base-light);
-  margin-bottom: 47px;
+  margin-bottom: 46px;
 
   @media (--wide-vp) {
     width: 60%;
   }
 
+  @media (--middle-vp) {
+    margin-bottom: 56px;
+  }
+
   @media (--small-vp) {
     font-size: 14px;
+    margin-bottom: 45px;
   }
 }
 
@@ -98,6 +111,10 @@
   min-height: 55px;
   border-radius: 3px;
   text-align: center;
+
+  @media (--middle-vp) {
+    margin-left: 45px;
+  }
 
   @media (--small-vp) {
     font-size: 14px;
