@@ -10,8 +10,14 @@
   }
 }
 
+.accordion__item:not(.accordion__item--show) .accordion__body {
+  @media (--small-vp) {
+    display: none;
+  }
+}
 
-.accordion button {
+
+.accordion__item button {
   @media (--small-vp) {
     position: absolute;
     display: flex;

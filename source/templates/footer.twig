@@ -30,67 +30,77 @@
         </ul>
       </div>
 
-      <nav class="page-footer__nav main-nav accordion ">
-        <em>Разделы сайта</em>
 
-        <button class="main-nav__toggle" type="button" hidden>
-          <span class="page__visual-hidden">Открыть или закрыть текст блока.</span>
-        </button>
+      <div class="accordion">
+        <nav class="page-footer__nav main-nav accordion__item">
 
-        <div class="main-nav__list-wrapper">
+          <div class="accordion__header">
+            <em>Разделы сайта</em>
+          </div>
 
-          <ul class="main-nav__list main-nav__list--first">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#about-company">О Компаниии</a>
+          <button class="main-nav__toggle" type="button" hidden>
+            <span class="page__visual-hidden">Открыть или закрыть текст блока.</span>
+          </button>
+
+          <div class="main-nav__list-wrapper accordion__body">
+
+            <ul class="main-nav__list main-nav__list--first">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#about-company">О Компаниии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Продукты</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Производство печатных плат</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Монтаж печатных плат</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list  main-nav__list--after">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Комплектующие</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Доставка</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+
+        <address class="page-footer__contacts footer-contacts accordion__item">
+
+          <div class="accordion__header">
+            <em>Наш офис</em>
+          </div>
+
+          <button class="footer-contacts__toggle" type="button" hidden>
+            <span class="page__visual-hidden">Открыть или закрыть текст блока.</span>
+          </button>
+
+          <ul class="footer-contacts__list accordion__body">
+            <li class="footer-contacts__item">
+              <p>г.&nbsp;Мытищи, Олимпийский проспект, д.10</p>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Продукты</a>
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Производство печатных плат</a>
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__phone" href="tel:+79253895829">+7 (925) 389-58-29</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Монтаж печатных плат</a>
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__phone" href="tel:+79253647813">+7 (925) 364-78-13</a>
             </li>
           </ul>
+        </address>
 
-          <ul class="main-nav__list  main-nav__list--after">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Комплектующие</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Доставка</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Контакты</a>
-            </li>
-          </ul>
-
-        </div>
-      </nav>
-
-      <address class="page-footer__contacts footer-contacts accordion">
-        <em>Наш офис</em>
-
-        <button class="footer-contacts__toggle" type="button" hidden>
-          <span class="page__visual-hidden">Открыть или закрыть текст блока.</span>
-        </button>
-
-        <ul class="footer-contacts__list">
-          <li class="footer-contacts__item">
-            <p>г.&nbsp;Мытищи, Олимпийский проспект, д.10</p>
-          </li>
-          <li class="footer-contacts__item">
-            <a class="footer-contacts__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
-          </li>
-          <li class="footer-contacts__item">
-            <a class="footer-contacts__phone" href="tel:+79253895829">+7 (925) 389-58-29</a>
-          </li>
-          <li class="footer-contacts__item">
-            <a class="footer-contacts__phone" href="tel:+79253647813">+7 (925) 364-78-13</a>
-          </li>
-        </ul>
-      </address>
+      </div>
 
     </div>
   </div>

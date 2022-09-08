@@ -42,6 +42,15 @@
   min-height: 100%;
   margin: 0;
   background-color: var(--color-bg-base);
+
+  &--nojs .about-company__hidden-text,
+  &--nojs .about-company__visible-text span {
+    display: block;
+  }
+
+  &--nojs .about-company__button {
+    display: none;
+  }
 }
 
 .page__visual-hidden {
