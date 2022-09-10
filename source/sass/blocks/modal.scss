@@ -8,6 +8,7 @@
   height: 100%;
   background-color: var(--collor-bg-window);
   z-index: 2;
+  overflow: auto;
 }
 
 .modal--close {
@@ -20,6 +21,7 @@
   border-radius: 3px;
   max-width: 500px;
   padding: 37px 40px 44px;
+  margin-top: 146px;
 }
 
 .modal__block p {

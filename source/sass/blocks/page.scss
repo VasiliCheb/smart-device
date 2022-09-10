@@ -43,6 +43,16 @@
   margin: 0;
   background-color: var(--color-bg-base);
 
+  &--noscroll {
+    height: 100vh;
+    overflow: hidden;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
   &--nojs .about-company__hidden-text,
   &--nojs .about-company__visible-text span {
     display: block;
@@ -50,6 +60,17 @@
 
   &--nojs .about-company__button {
     display: none;
+  }
+
+  &--nojs .accordion__item:not(.accordion__item--show) .accordion__body {
+    display: block;
+  }
+
+  &--nojs .accordion em {
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 }
 

@@ -13,39 +13,10 @@
   }
 }
 
-.page-footer em {
-  display: block;
-  color: var(--color-white);
-  font-family: var(--accent-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 16px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-bottom: 23px;
-
-  @media (--middle-vp) {
-    margin-bottom: 21px;
-  }
-
+.page-footer .page__wrapper-center {
   @media (--small-vp) {
-    margin-bottom: 14px;
-    width: 90%;
-  }
-}
-
-.page-footer__contacts a,
-.page-footer__contacts p,
-.page-footer__nav a {
-  color: var(--color-white);
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.35;
-  opacity: 70%;
-
-  @media (--small-vp) {
-    font-size: 14px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -86,62 +57,65 @@
   @media (--small-vp) {
     position: relative;
     align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
 
     &::before {
       content: "";
       position: absolute;
       height: 1px;
       width: 100%;
-      left: -25px;
+      left: 0;
       bottom: 0;
       background-color: var(--color-bg-base);
-      box-shadow: 50px 0 0 0 var(--color-bg-base);
       opacity: 70%;
     }
   }
 }
 
-.page-footer__nav a,
-.page-footer__contacts a {
-  display: inline-block;
-  width: fit-content;
+.page-footer__accordion {
+  grid-column: 1 / -1;
+}
 
-  &:focus {
-    outline: 1px solid var(--color-base-light);
-    outline-offset: 3px;
-    border-radius: 1px;
+.page-footer__list-wrapper {
+  display: grid;
+
+  @media (--wide-vp) {
+    grid-template-columns: 1fr 1fr;
   }
 
-  &:focus:not(:focus-visible) {
-    outline: none;
-    outline-offset: revert;
-    border-radius: initial;
+  @media (--not-wide-vp) {
+    grid-template-columns: 1fr;
   }
 
-  &:focus-visible {
-    outline: 1px solid var(--color-base-light);
-    outline-offset: 3px;
-    border-radius: 1px;
-  }
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:active {
-    opacity: 60%;
+  @media (--small-vp) {
+    padding-top: 3px;
   }
 }
 
 .page-footer__nav {
+  margin-right: 30px;
+
   @media (--wide-vp) {
     max-width: 470px;
+  }
+
+  @media (--middle-vp) {
+    padding-right: 90px;
+  }
+
+  @media (--small-vp) {
+    margin-right: 0;
   }
 }
 
 .page-footer__contacts {
   @media (--wide-vp) {
     max-width: 345px;
+  }
+
+  @media (--middle-vp) {
+    padding-left: 4px;
   }
 }
 
@@ -165,8 +139,8 @@
   margin-left: 15px;
 
   @media (--middle-vp) {
+    margin-left: auto;
     padding-top: 10px;
-    width: 50%;
   }
 
   @media (--small-vp) {
