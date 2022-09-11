@@ -173,7 +173,9 @@
 }
 
 .accordion__body.page-footer__contacts-list li {
-  margin-bottom: 11px;
+  @media (--small-vp) {
+    margin-bottom: 11px;
+  }
 }
 
 

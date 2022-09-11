@@ -39,7 +39,6 @@
   @media (--wide-vp) {
     min-width: 215px;
     width: 100%;
-    margin-right: 120px;
   }
 
   @media (--middle-vp) {
@@ -60,7 +59,11 @@
 }
 
 .page-header__contacts {
-  padding-top: 15px;
+  @media (--wide-vp) {
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
+  }
 
   @media (--middle-vp) {
     padding-top: 10px;
@@ -73,9 +76,14 @@
 }
 
 .page-header__list {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (--not-wide-vp) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   @media (--middle-vp) {
     margin-left: auto;
