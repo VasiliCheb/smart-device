@@ -29,23 +29,24 @@ window.addEventListener('scroll', () => {
 
 
 //Модальное окно
-getOpenedModal = () => {
+const getOpenedModal = () => {
   modal.style.display = "block";
   body.classList.add('page__body--noscroll');
   inputName.focus();
   header.setAttribute('inert', '');
   pageMain.setAttribute('inert', '');
   footer.setAttribute('inert', '');
-
-  getClosetModal = () => {
-    modal.style.display = "none";
-    body.classList.remove('page__body--noscroll');
-    header.removeAttribute("inert");
-    pageMain.removeAttribute("inert");
-    footer.removeAttribute("inert");
-    modalOpenedButton.focus();
-  }
 }
+
+const getClosetModal = () => {
+  modal.style.display = "none";
+  body.classList.remove('page__body--noscroll');
+  header.removeAttribute("inert");
+  pageMain.removeAttribute("inert");
+  footer.removeAttribute("inert");
+  modalOpenedButton.focus();
+}
+
 
 modalOpenedButton.onclick = () => {
   getOpenedModal();
@@ -75,16 +76,15 @@ if (aboutCompanyToggle) {
   });
 }
 
-
 //Маска input телефона в формате: +7(
 window.addEventListener("DOMContentLoaded", () => {
   [].forEach.call(inputTel,(input) => {
-  var keyCode;
-  mask(evt) = () => {
+    let keyCode;
+    function mask(evt) {
       evt.keyCode && (keyCode = evt.keyCode);
-      var pos = this.selectionStart;
+      let pos = this.selectionStart;
       if (pos < 3) evt.preventDefault();
-      var matrix = "+7(___) ___ ____",
+      let matrix = "+7(___) ___ ____",
           i = 0,
           def = matrix.replace(/\D/g, ""),
           val = this.value.replace(/\D/g, ""),
@@ -96,20 +96,20 @@ window.addEventListener("DOMContentLoaded", () => {
           i < 4 && (i = 3);
           new_value = new_value.slice(0, i)
       }
-      var reg = matrix.substring(0, this.value.length).replace(/_+/g, (a) => {
+      let reg = matrix.substring(0, this.value.length).replace(/_+/g, (a) => {
               return "\\d{1," + a.length + "}"
           }).replace(/[+()]/g, "\\$&");
       reg = new RegExp("^" + reg + "$");
       if (!reg.test(this.value) || this.value.length < 4 || keyCode > 47 && keyCode < 58) this.value = new_value;
       if (evt.type == "blur" && this.value.length < 4)  this.value = ""
-  }
+    }
 
-  input.addEventListener("input", mask, false);
-  input.addEventListener("focus", mask, false);
-  input.addEventListener("blur", mask, false);
-  input.addEventListener("keydown", mask, false)
+    input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, false);
+    input.addEventListener("keydown", mask, false)
 
-});
+  });
 
 });
 
