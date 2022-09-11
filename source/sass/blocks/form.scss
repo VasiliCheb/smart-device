@@ -102,6 +102,7 @@
 .form textarea {
   min-height: 155px;
   padding-top: 23px;
+  resize: none;
 
   @media (--middle-vp) {
     padding-top: 28px;
@@ -116,6 +117,7 @@
 .form textarea::placeholder {
   color: var(--color-white);
   opacity: 1;
+  user-select: none;
 }
 
 .form__question {
@@ -238,6 +240,7 @@
   align-items: center;
   margin-top: auto;
   width: 100%;
+  user-select: none;
 
   @media (--middle-vp) {
     margin-top: 0;

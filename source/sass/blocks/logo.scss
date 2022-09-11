@@ -3,6 +3,7 @@
   grid-template-columns: min-content auto;
   grid-template-rows: min-content auto;
   column-gap: 15px;
+  user-select: none;
 }
 
 .logo svg {

@@ -95,6 +95,7 @@
 
 .page-footer__nav {
   margin-right: 30px;
+  user-select: none;
 
   @media (--wide-vp) {
     max-width: 470px;

@@ -126,9 +126,9 @@
                     </div>
                   </li>
                   <li class="form__item">
-                    <div class="form__field">
+                    <div class="form__field form__field--tel">
                       <label class="page__visual-hidden" for="user-phone">Телефон:*</label>
-                      <input id="user-phone" type="tel" placeholder="Телефон" name="phone" required pattern="[0-9()+\s-]+">
+                      <input value="" minlength="16" id="user-phone" type="tel" placeholder="Телефон" name="phone" required>
                     </div>
                   </li>
                 </ul>
@@ -172,13 +172,13 @@
                 <li class="form__item">
                   <div class="form__field">
                     <label class="page__visual-hidden" for="modal-user-name">Имя:*</label>
-                    <input id="modal-user-name" type="text" placeholder="Имя" name="name" autofocus required>
+                    <input id="modal-user-name" type="text" placeholder="Имя" name="name" required>
                   </div>
                 </li>
                 <li class="form__item">
-                  <div class="form__field">
+                  <div class="form__field form__field--tel">
                     <label class="page__visual-hidden" for="modal-user-phone">Телефон:*</label>
-                    <input id="modal-user-phone" type="tel" placeholder="Телефон" name="phone" required pattern="[0-9()+\s-]+">
+                    <input value="" minlength="16" id="modal-user-phone" type="tel" placeholder="Телефон" name="phone" required>
                   </div>
                 </li>
               </ul>

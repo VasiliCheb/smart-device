@@ -62,14 +62,16 @@
     display: none;
   }
 
-  &--nojs .accordion__item:not(.accordion__item--show) .accordion__body {
-    display: block;
-  }
-
   &--nojs .accordion em {
     &::before,
     &::after {
       display: none;
+    }
+  }
+
+  @media (--small-vp) {
+    &--nojs .accordion__item:not(.accordion__item--show) .accordion__body {
+      display: block;
     }
   }
 }
