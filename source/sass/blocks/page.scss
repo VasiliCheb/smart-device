@@ -52,27 +52,27 @@
       display: none;
     }
   }
+}
 
-  &--nojs .about-company__hidden-text,
-  &--nojs .about-company__visible-text span {
-    display: block;
-  }
+.page__body--nojs .about-company__hidden-text,
+.page__body--nojs .about-company span {
+  display: block;
+}
 
-  &--nojs .about-company__button {
+.page__body--nojs .about-company__button {
+  display: none;
+}
+
+.page__body--nojs .accordion em {
+  &::before,
+  &::after {
     display: none;
   }
+}
 
-  &--nojs .accordion em {
-    &::before,
-    &::after {
-      display: none;
-    }
-  }
-
+.page__body--nojs .accordion__item:not(.accordion__item--show) .accordion__body {
   @media (--small-vp) {
-    &--nojs .accordion__item:not(.accordion__item--show) .accordion__body {
-      display: block;
-    }
+    display: block;
   }
 }
 

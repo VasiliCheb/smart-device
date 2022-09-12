@@ -16,18 +16,6 @@ const inputTel = body.querySelectorAll('.form__field--tel input')
 body.classList.remove('page__body--nojs');
 
 
-//фиксация Шапки при начале скролла
-window.addEventListener('scroll', () => {
-  let scrollDistance = window.scrollY;
-
-  if(scrollDistance >= 1) {
-    header.classList.add('page-header--fixed');
-  } else{
-    header.classList.remove('page-header--fixed');
-  }
-});
-
-
 //Модальное окно
 const getOpenedModal = () => {
   modal.style.display = "block";

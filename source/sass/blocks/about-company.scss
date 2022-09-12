@@ -54,28 +54,24 @@
   }
 }
 
-.about-company {
-  &--opened .about-company__hidden-text,
-  &--opened .about-company__visible-text span {
-    display: block;
+.about-company span {
+  @media (--small-vp) {
+    display: none;
   }
+}
 
-  &--opened .about-company__button {
-    &::before {
-      content: "Свернуть";
-      display: block;
-    }
-  }
+.about-company--opened .about-company__hidden-text,
+.about-company--opened span {
+  display: block;
+}
+
+.about-company--opened .about-company__button::before {
+  content: "Свернуть";
+  display: block;
 }
 
 .about-company__hidden-text {
   display: none;
-}
-
-.about-company__visible-text span {
-  @media (--small-vp) {
-    display: none;
-  }
 }
 
 .about-company__button {

@@ -4,14 +4,16 @@
 
   @media (--small-vp) {
     flex-direction: column;
+  }
+}
 
-    &--opened button::before {
-      content: "";
-      position: absolute;
-      width: 15px;
-      height: 1px;
-      background-color: var(--color-bg-base);
-    }
+.accordion--opened button::before {
+  @media (--small-vp) {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    background-color: var(--color-bg-base);
   }
 }
 
@@ -72,7 +74,7 @@
 }
 
 .accordion a {
-  display: inline-block;
+  display: block;
   width: fit-content;
 
   &:focus {
@@ -114,10 +116,6 @@
     padding-left: 0;
     padding-top: 0;
 
-    &:not(.accordion__item--show) .accordion__body {
-      display: none;
-    }
-
     &::before {
       content: "";
       position: absolute;
@@ -128,14 +126,21 @@
       background-color: var(--color-bg-base);
       opacity: 70%;
     }
-
-    &--show em {
-      &::before {
-        transform: rotate(0);
-      }
-    }
   }
 }
+
+.accordion__item:not(.accordion__item--show) .accordion__body {
+  @media (--small-vp) {
+    display: none;
+  }
+}
+
+.accordion__item--show em::before {
+  @media (--small-vp) {
+    transform: rotate(0);
+  }
+}
+
 
 .accordion__header:focus-within {
   @media (--small-vp) {
@@ -170,14 +175,11 @@
 
 .accordion__body li {
   margin-bottom: 8px;
-}
 
-.accordion__body.page-footer__contacts-list li {
   @media (--small-vp) {
     margin-bottom: 11px;
   }
 }
-
 
 .accordion__item ul {
   margin: 0;

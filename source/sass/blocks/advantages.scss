@@ -70,16 +70,6 @@
     min-height: 360px;
     padding-right: 40px;
     padding-bottom: 16px;
-
-    &--detective h3 {
-      margin-top: 13px;
-      margin-bottom: 7px;
-    }
-
-    &--tag h3 {
-      margin-top: 10px;
-      margin-bottom: 5px;
-    }
   }
 
   @media (--small-vp) {
@@ -89,12 +79,6 @@
     &--detective,
     &--tag {
       min-height: 325px;
-    }
-
-    &--tag h3,
-    &--detective h3 {
-      margin-top: 19px;
-      margin-bottom: 13px;
     }
   }
 
@@ -149,5 +133,29 @@
     outline: none;
     color: var(--color-base-light);
     --hover-color-text: var(--color-base-light);
+  }
+}
+
+.advantages__item--detective h3 {
+  @media (--middle-vp) {
+    margin-top: 13px;
+    margin-bottom: 7px;
+  }
+
+  @media (--small-vp) {
+    margin-top: 19px;
+    margin-bottom: 13px;
+  }
+}
+
+.advantages__item--tag h3 {
+  @media (--middle-vp) {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  @media (--small-vp) {
+    margin-top: 19px;
+    margin-bottom: 13px;
   }
 }
