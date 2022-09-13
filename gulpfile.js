@@ -67,11 +67,6 @@ export function processStyles () {
 export function processScripts () {
   return src("./source/js/*.js")
     .pipe(terser())
-    .pipe(
-      rename({
-        extname: ".min.js"
-      })
-    )
     .pipe(dest("./build/js"))
     .pipe(browser.stream());
 }
