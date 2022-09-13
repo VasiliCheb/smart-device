@@ -32,4 +32,3 @@ if (accordion) {
     alwaysOpen: false
   });
 }
-
