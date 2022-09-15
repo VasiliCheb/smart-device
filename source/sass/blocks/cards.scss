@@ -85,11 +85,11 @@
 
 .cards__link {
   position: relative;
-  display: grid;
+  display: block;
   background-color: var(--color-bg-image);
   color: var(--color-white);
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   padding: 47px 40px;
 
   @media (--middle-vp) {
@@ -179,14 +179,14 @@
 
     @media (--small-vp) {
       background:
-        linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+        linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)),
         url("../../img/card-production-s@1x.jpg") no-repeat;
       background-size: cover;
       background-position: center;
 
       @media (--x2) {
         background:
-          linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+          linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)),
           url("../../img/card-production-s@2x.jpg") no-repeat;
         background-size: cover;
         background-position: center;
@@ -227,14 +227,14 @@
 
     @media (--small-vp) {
       background:
-        linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+        linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)),
         url("../../img/card-mounting-s@1x.jpg") no-repeat;
       background-size: cover;
       background-position: center;
 
       @media (--x2) {
         background:
-          linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+          linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)),
           url("../../img/card-mounting-s@2x.jpg") no-repeat;
         background-size: cover;
         background-position: center;
@@ -275,14 +275,14 @@
 
     @media (--small-vp) {
       background:
-        linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+        linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)),
         url("../../img/card-components-s@1x.jpg") no-repeat;
       background-size: cover;
       background-position: center;
 
       @media (--x2) {
         background:
-          linear-gradient(var(--color-gradient-cards), var(--color-gradient-cards)),
+          linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)),
           url("../../img/card-components-s@2x.jpg") no-repeat;
         background-size: cover;
         background-position: center;
