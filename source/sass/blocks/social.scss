@@ -74,8 +74,8 @@
   }
 }
 
-.social__item:first-child {
-  @media (--wide-vp) {
-    order: 1;
+.social__item:last-child {
+  @media (--not-wide-vp) {
+    order: -1;
   }
 }
